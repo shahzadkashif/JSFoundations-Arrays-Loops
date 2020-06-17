@@ -76,7 +76,7 @@ function getDuplicateCount(x, numbers) {
  */
 function youGottaCalmDown(s) {
   // Your code here
-  let array = [];
+  /* let array = [];
   let string = "";
   for (let i = 0; i < s.length; i++) {
     if (s[i] === "!") {
@@ -87,6 +87,9 @@ function youGottaCalmDown(s) {
     }
   }
   return string;
+*/
+  while (s.endsWith("!!")) s = s.slice(0, -1);
+  return s;
 }
 
 module.exports = { getOdds, getEvens, getDuplicateCount, youGottaCalmDown };
